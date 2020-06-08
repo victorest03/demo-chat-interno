@@ -1,0 +1,314 @@
+/*Clases Helper*/
+.no-padding{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.no-margin{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+body{
+	overflow-x: hidden;
+	background: #FFC60D;
+	.wrapper {
+		padding-left: 0;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+
+		.navbar{
+			color: #fff;
+			.navbar-toggler{
+				display: none;
+				position: absolute;
+				right: 0;
+				font-size: 2rem;
+				line-height: 4.8rem;
+				background: 0 0;
+				border: 1px solid transparent;
+				width: 4.8rem;
+				outline: none;
+			}
+
+			a.navbar-brand{
+				color: #fff;
+			}
+		}
+
+
+		&.toggled {
+			.sidebar-wrapper {
+				width: 300px;
+			}
+
+			.page-content-wrapper {
+				position: absolute;
+				margin-right: -250px;
+			}
+		}
+
+		.sidebar-wrapper {
+			z-index: 100;
+			position: fixed;
+			height: 100%;
+			width: 300px;
+			overflow-y: auto;
+			background: #000;
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+
+			.panel__bandeja{
+				height: 100%;
+				width: 100%;
+				background: #14007B;
+				z-index: 100;
+				position: absolute;
+				.sidebar-content {
+					padding-top: 5rem;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: calc(100% - 4rem);
+					transition: opacity 200ms, z-index 0 0;
+					overflow-x: none;
+					overflow-y: auto;
+					.contact {
+						background: #fff;
+						position: relative;
+						width: 100%;
+						height: 5rem;
+						padding-left: 1.7rem;
+						display: -webkit-flex;
+						display: -ms-flexbox;
+						display: flex;
+						-webkit-align-items: center;
+						-ms-flex-align: center;
+						align-items: center;
+						cursor: pointer;
+						overflow: hidden;
+						.contact__photo{
+							border-radius: 50%;
+							margin-right: 1.5rem;
+						}
+						.contact__name {
+							font-size: 1.2rem;
+							font-family: "Open Sans", Helvetica, Arial, sans-serif;
+						}
+						.contact__status{
+							position: absolute;
+							top: 2.1rem;
+							right: 1.5rem;
+							width: 8px;
+							height: 8px;
+							border: 2px solid #00B570;
+							border-radius: 50%;
+							opacity: 0;
+							transition: opacity 0.3s;
+						}
+						.contact__status.online{
+							opacity: 1;
+						}
+					}
+				}
+				.search {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					height: 4rem;
+					padding-left: 1.5rem;
+					background: #fff;
+					display: -webkit-flex;
+					display: -ms-flexbox;
+					display: flex;
+					-webkit-align-items: center;
+					-ms-flex-align: center;
+					align-items: center;
+					i.search__img{
+						font-size: 2rem;
+					}
+					input[type='text'].search__input {
+						width: 100%;
+						height: 100%;
+						border: none;
+						outline: none;
+						padding-left: 0.5rem;
+					}
+				}
+			}
+
+			.panel__chat{
+				z-index: 200;
+				top: 0;
+				left: -100%;
+				width: 100%;
+				height: 100%;
+				transition: left 200ms;
+				background-color: #E9EAF3;
+				padding-top: 5rem;
+				position: absolute;
+				&::before {
+					content: "";
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					height: 0.5rem;
+					width: 100%;
+					background: #1cc6ae;
+					transition: width 0.2s;
+					padding-top: 5.5rem;
+				}
+				&.active {
+					left: 0;
+				}
+				.chat__person {
+					font-size: 2rem;
+					font-family: "Open Sans", Helvetica, Arial, sans-serif;
+					color: #36343D;
+					height: 50px;
+					display: flex;
+					align-items: center;
+					padding: 0 2.5rem;
+					.chat__back {
+						display: inline-block;
+						cursor: pointer;
+					}
+					.chat__online {
+						width: 8px;
+						height: 8px;
+						border: 2px solid #00B570;
+						border-radius: 50%;
+						opacity: 0;
+						transition: opacity 0.3s;
+						margin: 0 10px;
+						&.active {
+							opacity: 1;
+						}
+					}
+				}
+				.chat__messages {
+					width: 100%;
+					padding: 0 2.5rem;
+					overflow-y: auto;
+					.chat__msgRow {
+						margin-bottom: 0.5rem;
+						&:after {
+							content: "";
+							display: table;
+							clear: both;
+						}
+						.chat__message {
+							display: inline-block;
+							max-width: 60%;
+							padding: 1rem;
+							font-size: 1.4rem;
+							font-family: "Open Sans", Helvetica, Arial, sans-serif;
+							&.mine {
+								color: #2B2342;
+								border: 1px solid #DFDFDF;
+								background: #fff;
+							}
+							&.notMine {
+								float: right;
+								color: #23244E;
+								background: lemonchiffon;
+							}
+						}
+					}
+				}
+
+				.chat__input {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					height: 5.5rem;
+					padding: 1rem 1rem 1rem 4rem;
+					background-image: url("http://i.imgur.com/cM3yCT9.png");
+					background-repeat: no-repeat;
+					background-position: 1rem 1.5rem;
+					background-color: #E9EAF3;
+					color: #2B2342;
+					font-size: 1.4rem;
+					font-family: "Open Sans", Helvetica, Arial, sans-serif;
+				}
+			}
+		}
+
+		.page-content-wrapper {
+			width: calc( 100% - 300px);
+			height: 100%;
+			padding-top: 5rem;
+			margin-left: 300px;
+			position: absolute;
+			.panel__grid__1{
+				padding: 5px;
+				.grid{
+					.grid__item__1{
+						height: 400px;
+						width: 100%;
+					}
+
+					.grid__item__2,.grid__item__3{
+						height: 200px;
+						width: 100%;
+					}
+					.grid__item__1,.grid__item__2,.grid__item__3{
+						padding: 5px;
+						.grid__item__inner{
+							background: #fff;
+							width: 100%;
+							height: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.cloned {
+  position: absolute;
+  z-index: 200;
+  transition: top 0.3s, left 0.3s;
+  transition-delay: 0.2s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  .cloned.removed {
+    transition: opacity 0.2s 0;
+    opacity: 0; }
+
+@media(max-width:768px){
+	body{
+		.wrapper {
+			padding-left: 0;
+			.navbar{
+				.navbar-toggler{
+					display: block;
+				}
+			}
+			&.toggled{
+				.sidebar-wrapper{
+					margin-left: 0;
+				}
+
+				#page-content-wrapper{
+					position: relative;
+					margin-right: 0;
+				}
+			}
+			.sidebar-wrapper{
+				margin-left: -100%;
+			}
+
+			.page-content-wrapper{
+				width: 100%;
+				margin: 0;
+
+			}
+		}
+	}
+}

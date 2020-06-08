@@ -1,0 +1,20 @@
+body{
+  height:100%;
+  .mdl-layout {
+    align-items: center;
+    justify-content: center;
+    .mdl-layout__content {
+      padding: 24px;
+      flex: none;
+      .mdl-card{
+        .mdl-card__actions{
+          display: flex;
+          flex-direction: column;
+          .mdl-button{
+            align-self: flex-end;
+          }
+        }
+      }
+    }
+  }
+}

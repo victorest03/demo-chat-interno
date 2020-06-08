@@ -1,0 +1,26 @@
+{
+  "short_name": "Mi chat",
+  "name": "Chat Micsac Interno ++",
+  "icons": [
+    {
+      "src": "launcher-icon-xhdpi.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "launcher-icon-xxhdpi.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "launcher-icon-xxxhdpi.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/login.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#29BDBB",
+  "background_color": "#29BDBB"
+}

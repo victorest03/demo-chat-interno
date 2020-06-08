@@ -1,0 +1,25 @@
+body {
+  height: 100%; }
+  body .mdl-layout {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    body .mdl-layout .mdl-layout__content {
+      padding: 24px;
+      -webkit-flex: none;
+      -ms-flex: none;
+      flex: none; }
+      body .mdl-layout .mdl-layout__content .mdl-card .mdl-card__actions {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        body .mdl-layout .mdl-layout__content .mdl-card .mdl-card__actions .mdl-button {
+          -webkit-align-self: flex-end;
+          -ms-flex-item-align: end;
+          align-self: flex-end; }

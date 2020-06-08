@@ -1,0 +1,185 @@
+.mdl-menu__item {
+  padding: 0; }
+  .mdl-menu__item a {
+    list-style: none;
+    text-decoration: none;
+    width: calc(100% - 32px);
+    height: 100%;
+    display: block;
+    padding: 0 16px; }
+
+.mdl-layout--fixed-drawer.is-upgraded:not(.is-small-screen) > .mdl-layout__header {
+  margin-left: 300px;
+  width: calc(100% - 300px); }
+
+.mdl-layout--fixed-drawer > .mdl-layout__drawer {
+  width: 300px;
+  left: -300px; }
+  .mdl-layout--fixed-drawer > .mdl-layout__drawer.is-visible {
+    left: 0; }
+  @media screen and (min-width: 1025px) {
+    .mdl-layout--fixed-drawer > .mdl-layout__drawer {
+      left: 0; } }
+
+.mdl-layout--fixed-drawer > .mdl-layout__content {
+  margin-left: 0; }
+  @media screen and (min-width: 1025px) {
+    .mdl-layout--fixed-drawer > .mdl-layout__content {
+      margin-left: 300px; } }
+
+.item--contact {
+  cursor: pointer; }
+
+.textfield-search--botton {
+  position: absolute;
+  bottom: 0;
+  padding: 5px 16px;
+  background: #fff; }
+  .textfield-search--botton.is-focused .mdl-textfield__label {
+    top: 8px; }
+    .textfield-search--botton.is-focused .mdl-textfield__label::after {
+      background-color: #3f51b5;
+      bottom: 5px; }
+  .textfield-search--botton.is-dirty .mdl-textfield__label {
+    top: -8px; }
+  .textfield-search--botton .mdl-textfield__input {
+    width: calc(100% - 24px);
+    float: right; }
+  .textfield-search--botton .mdl-textfield__label {
+    margin-left: 40px;
+    margin-right: 16px;
+    width: calc(100% - 56px);
+    top: 6px; }
+
+.page-content .mdl-grid {
+  padding: 0; }
+
+.mdlcell--item.mdlcell--item--1 {
+  height: 300px; }
+  .mdlcell--item.mdlcell--item--1 .mdlcell--item--inner .bg-descrip {
+    background: url(https://getmdl.io/assets/demos/welcome_card.jpg) center/cover; }
+
+.mdlcell--item.mdlcell--item--2 {
+  height: 150px; }
+
+.mdlcell--item.mdlcell--item--3 {
+  height: 150px; }
+
+.mdlcell--item .mdlcell--item--inner {
+  height: 100%; }
+  .mdlcell--item .mdlcell--item--inner .micsac-card.bg-descrip {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100% - 10px);
+    min-height: initial; }
+    .mdlcell--item .mdlcell--item--inner .micsac-card.bg-descrip > .micsac-card__title {
+      -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+      align-self: flex-end;
+      padding: 10px;
+      color: white;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.2); }
+      .mdlcell--item .mdlcell--item--inner .micsac-card.bg-descrip > .micsac-card__title > .mdl-card__title-text h2 {
+        font-size: 24px; }
+      .mdlcell--item .mdlcell--item--inner .micsac-card.bg-descrip > .micsac-card__title > .micsac-card-image__descr {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 14px;
+        font-weight: 500; }
+  .mdlcell--item .mdlcell--item--inner .micsac-card.bg-clima {
+    background: #0B9DF2; }
+    .mdlcell--item .mdlcell--item--inner .micsac-card.bg-clima.mdl-card {
+      width: 100%;
+      height: calc(100% - 10px);
+      min-height: initial; }
+    .mdlcell--item .mdlcell--item--inner .micsac-card.bg-clima > .mdl-card__title {
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      color: #000; }
+      .mdlcell--item .mdlcell--item--inner .micsac-card.bg-clima > .mdl-card__title > h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 100%;
+        text-align: right; }
+      .mdlcell--item .mdlcell--item--inner .micsac-card.bg-clima > .mdl-card__title > ul {
+        list-style: none;
+        text-align: right;
+        padding-left: 0;
+        margin: 0;
+        width: 100%; }
+
+.mdl-dialog {
+  top: 5px; }
+  .mdl-dialog.micsac--chat {
+    width: auto;
+    padding: 0;
+    margin: 0 5px;
+    height: calc(100% - 10px); }
+    .mdl-dialog.micsac--chat .mdl-dialog__content {
+      padding: 0;
+      height: 100%; }
+      .mdl-dialog.micsac--chat .mdl-dialog__content .mdl-card {
+        width: 100%;
+        height: 100%; }
+        .mdl-dialog.micsac--chat .mdl-dialog__content .mdl-card .mdl-card__title {
+          display: block;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+          .mdl-dialog.micsac--chat .mdl-dialog__content .mdl-card .mdl-card__title h2.mdl-card__title-text i.material-icons {
+            margin-right: 15px; }
+        .mdl-dialog.micsac--chat .mdl-dialog__content .mdl-card .mdl-card__supporting-text {
+          width: calc(100% - 32px);
+          height: 100%; }
+          .mdl-dialog.micsac--chat .mdl-dialog__content .mdl-card .mdl-card__supporting-text .mdl-list {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            height: 100%;
+            max-height: 100%;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 0;
+            margin: 0; }
+            .mdl-dialog.micsac--chat .mdl-dialog__content .mdl-card .mdl-card__supporting-text .mdl-list .mdl-list__item {
+              -webkit-align-self: flex-start;
+              -ms-flex-item-align: start;
+              align-self: flex-start;
+              background: #D2D2D2;
+              box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+              .mdl-dialog.micsac--chat .mdl-dialog__content .mdl-card .mdl-card__supporting-text .mdl-list .mdl-list__item:before {
+                content: '';
+                width: 0;
+                height: 0;
+                box-sizing: border-box;
+                border-style: solid;
+                border-width: 0 10px 10px 0;
+                border-color: transparent #D2D2D2 transparent transparent;
+                position: absolute;
+                left: 6px; }
+              .mdl-dialog.micsac--chat .mdl-dialog__content .mdl-card .mdl-card__supporting-text .mdl-list .mdl-list__item.mi {
+                -webkit-align-self: flex-end;
+                -ms-flex-item-align: end;
+                align-self: flex-end;
+                background: #fff; }
+                .mdl-dialog.micsac--chat .mdl-dialog__content .mdl-card .mdl-card__supporting-text .mdl-list .mdl-list__item.mi span.mdl-list__item-primary-content span.mdl-list__item-sub-title {
+                  text-align: right; }
+                .mdl-dialog.micsac--chat .mdl-dialog__content .mdl-card .mdl-card__supporting-text .mdl-list .mdl-list__item.mi:before {
+                  border-width: 10px 10px 0 0;
+                  border-color: #fff transparent transparent;
+                  right: 6px;
+                  left: initial; }
+        .mdl-dialog.micsac--chat .mdl-dialog__content .mdl-card .mdl-card__actions {
+          padding: 0 15px; }
+          .mdl-dialog.micsac--chat .mdl-dialog__content .mdl-card .mdl-card__actions .mdl-textfield {
+            width: calc(80% - 15px); }
+          .mdl-dialog.micsac--chat .mdl-dialog__content .mdl-card .mdl-card__actions .mdl-button {
+            width: calc(20%);
+            margin-left: 5px; }
